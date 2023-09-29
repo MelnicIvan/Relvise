@@ -1,0 +1,167 @@
+/*----------Basic Styles---------- */
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li,
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+[class*=__container] {
+  max-width: 1075px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*----------Components---------- */
+.header__container {
+  display: flex;
+  min-height: 104px;
+  align-items: center;
+}
+.header__logo {
+  margin-right: 132px;
+}
+.menu__icon {
+  display: none;
+}
+.menu__list {
+  display: flex;
+  gap: 21px;
+}
+.menu__link {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 171%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+/*----------Pages---------- */
+/*----------Media---------- */
+/*PC*/
+/*TABLET*/
+/*MOBILE*/
+@media (max-width: 767.98px) {
+  .header__logo {
+    margin-right: 70px;
+  }
+}
+/*MOBILE SMALL*/
+@media (max-width: 479.98px) {
+  .header__logo {
+    position: relative;
+    z-index: 2;
+  }
+  .menu {
+    margin-left: auto;
+  }
+  .menu__icon {
+    margin-right: 15px;
+    display: block;
+    position: relative;
+    width: 37px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .menu__icon span, .menu__icon::before, .menu__icon::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #252B42;
+    transition: all 0.3s ease;
+  }
+  .menu__icon span {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .menu__icon::before {
+    top: 0;
+  }
+  .menu__icon::after {
+    bottom: 0;
+  }
+  .menu__icon._active span {
+    opacity: 0;
+  }
+  .menu__icon._active::after {
+    transform: rotate(-45deg) translateX(40%);
+  }
+  .menu__icon._active::before {
+    transform: rotate(45deg) translateX(40%);
+  }
+  .menu__body {
+    padding-top: 215px;
+    position: fixed;
+    top: -100%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #21777a;
+    transition: all 0.5s ease;
+  }
+  .menu__body._active {
+    top: 0;
+  }
+  .menu__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .menu__link {
+    font-size: 28px;
+  }
+}

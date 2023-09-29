@@ -1,0 +1,35 @@
+.header {
+
+    &__container {
+        display: flex;
+        min-height: 104px;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 132px;
+    }
+
+    &__menu {}
+}
+
+.menu {
+    &__icon {
+        display: none;
+    }
+
+    &__body {}
+
+    &__list {
+        display: flex;
+        gap: 21px;
+    }
+
+    &__link {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 171%;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
+}
