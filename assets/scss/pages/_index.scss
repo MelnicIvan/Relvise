@@ -1,0 +1,83 @@
+.hero {
+    padding: 184px 0px 191px 0px;
+    
+    position: relative;
+
+    &__container {}
+
+    &__info {
+
+        position: relative;
+        z-index: 5;
+
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    &__title {
+        max-width: 510px;
+        color: #252B42;
+        font-size: 58px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 138%;
+        letter-spacing: 0.2px;
+    }
+
+    &__subtitle {
+        max-width: 376px;
+        color: #737373;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: 0.2px;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__button {
+        padding: 10px 36px;
+
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 200%;
+        letter-spacing: 0.2px;
+
+        border-radius: 37px;
+        background: var(--primary-color, #FF7B47);
+    }
+
+    &__button-border {
+        background: transparent;
+        color: #0D5C63;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 200%;
+        letter-spacing: 0.2px;
+
+        border: 1px solid var(--secondary-color-1, #0D5C63);
+    }
+
+
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+    & img{
+        object-position: right;
+    }
+}
+
+
+}
