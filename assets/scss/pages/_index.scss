@@ -79,12 +79,13 @@
 
 .services {
 
+
     &__container {}
 
     &__items {
         display: flex;
         margin-top: -110px;
-        gap:30px;
+        gap: 30px;
     }
 
     &__item {
@@ -117,5 +118,53 @@
         font-weight: 500;
         line-height: 143%;
         letter-spacing: 0.2px;
+    }
+}
+
+.statistics {
+    padding: 80px 0 0 0;
+
+
+    &__container {}
+
+    &__header {
+
+    }
+
+    &__title {}
+
+    &__subtitle {}
+
+    &__items {
+        margin: 50px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {}
+}
+
+.item-statistics {
+    padding: 30px 40px 30px 40px;
+    text-align: center;
+    background: #FFF;
+
+    &__icon {}
+
+    &__number {
+        margin: 10px 0;
+        color: #252B42;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 143%;
+        letter-spacing: 0.2px;
+    }
+
+    &__text {
+        color: #737373;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: 0.1px;
     }
 }

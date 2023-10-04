@@ -40,6 +40,7 @@ body {
 
 body {
   font-family: "Montserrat";
+  background: #FAFAFA;
 }
 
 body._lock {
@@ -106,6 +107,33 @@ body._lock {
   line-height: 171%;
   letter-spacing: 0.2px;
   color: #737373;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  max-width: 610px;
+  color: #252B42;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 143%;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+.subtitle {
+  max-width: 510px;
+  color: #737373;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 143%;
+  letter-spacing: 0.2px;
+  text-align: center;
 }
 
 /*----------Pages---------- */
@@ -206,6 +234,35 @@ body._lock {
   letter-spacing: 0.2px;
 }
 
+.statistics {
+  padding: 80px 0 0 0;
+}
+.statistics__items {
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.item-statistics {
+  padding: 30px 40px 30px 40px;
+  text-align: center;
+  background: #FFF;
+}
+.item-statistics__number {
+  margin: 10px 0;
+  color: #252B42;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 143%;
+  letter-spacing: 0.2px;
+}
+.item-statistics__text {
+  color: #737373;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+}
+
 /*----------Media---------- */
 /*PC*/
 /*TABLET*/
@@ -222,6 +279,12 @@ body._lock {
     width: 80%;
     align-items: center;
     max-width: none;
+  }
+  .statistics__items {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 230px);
+    gap: 40px;
   }
 }
 /*MOBILE*/
@@ -249,9 +312,23 @@ body._lock {
   .services__items {
     margin-top: -80px;
   }
+  .statistics__items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .item-statistics__number {
+    margin: 5px 0;
+  }
 }
 /*MOBILE SMALL*/
 @media (max-width: 479.98px) {
+  .title {
+    font-size: 32px;
+  }
+  .subtitle {
+    font-size: 12px;
+  }
   .header__logo {
     position: relative;
     z-index: 2;
@@ -338,5 +415,8 @@ body._lock {
   }
   .item-services__subtitle {
     font-size: 12px;
+  }
+  .statistics {
+    padding: 50px 0 0 0;
   }
 }
