@@ -127,9 +127,7 @@
 
     &__container {}
 
-    &__header {
-
-    }
+    &__header {}
 
     &__title {}
 
@@ -166,5 +164,67 @@
         font-weight: 700;
         line-height: 150%;
         letter-spacing: 0.1px;
+    }
+}
+
+.benefits {
+    padding: 181px 0 0 0;
+
+    &__container {}
+
+    &__header {}
+
+    &__title {}
+
+    &__subtitle {}
+
+    &__items {
+        margin: 45px 0 0 0;
+
+        display: flex;
+        justify-content: space-between;
+        gap:35px;
+    }
+
+    &__item {}
+}
+
+.item-benefits {
+    flex: 0 1 240px;
+    background: #fff;
+    min-height: 340px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__info {
+        padding: 30px;
+    }
+
+    &__title {
+        color: #252B42;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: 0.1px;
+    }
+
+    &__subtitle {
+        margin: 15px 0 20px 0;
+
+        color: #737373;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 143%;
+        letter-spacing: 0.2px;
+    }
+
+    &__image {
+        & img {
+            width: 100%;    
+        }
     }
 }
